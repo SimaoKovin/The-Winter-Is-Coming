@@ -32,8 +32,6 @@ margin: 8% auto 0;
     background: url('NeedleHouseStarkSteel.svg') 50% 50% no-repeat;
     z-index: 9;
     transform-origin: 45% 185px;
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     background-size: cover;
 } 
 #minuteHand {
@@ -46,8 +44,6 @@ margin: 8% auto 0;
     background: url('LongClawHouseStarkSteel.svg') 50% 50% no-repeat;
     z-index: 7;
     transform-origin: 40% 150px;
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     background-size: cover;
 } 
 
@@ -61,7 +57,5 @@ margin: 8% auto 0;
     background: url('IceHouseStarkSteel.svg') 50% 50% no-repeat;
     z-index: 5;
     transform-origin: 52% 169px;
-    transition: all 0.05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     background-size: cover;
 }
