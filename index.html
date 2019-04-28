@@ -11,17 +11,20 @@
 </head>
 
 <body>
+ 
   <div id="container1">
     <header>Winter<br> Is <br> Coming</header>
 
     <div id="clockFace">
 
-      <div id="hourHand"></div>
-      <div id="minuteHand"></div>
-      <div id="secondHand"></div>
+      <div id="hourHand" style="transform:rotate(20deg)"></div>
+      <div id="minuteHand"style="transform:rotate(0deg)"></div>
+      <div id="secondHand"style="transform:rotate(0deg)"></div>
     </div>
   </div>
-  <div id="alarm">
+<div id="container2">
+
+    <div id="alarm">
     <input id="alarmTime" type="datetime-local">
     <button id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
 
@@ -31,7 +34,16 @@
     </div>
 
   </div>
+<form id="toDoForm">
+<h2>The North Remembers, but do you??</h2>
+<input type="text" id="toDoInput">
+<button type="button" onclick="toDoList()">Add</button> <button type="button" onclick="clearItems()">Clear List</button>
+<ul id="toDolist"> 
+  
+</ul>
+</form>
 
+</div>
 
   <script src="main.js"></script>
 </body>
