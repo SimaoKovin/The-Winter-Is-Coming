@@ -1,7 +1,7 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  
   font-family: Game of Thrones;
 }
 
@@ -12,21 +12,65 @@
 
 header {
  
-  text-align: center;
+  
   font-size: 2em;
   font-weight: bold;
   color: white;
 }
 
-body {
-  background-color: rgb(165, 167, 170);
-  display: flex;
-  padding: 30px;
+h2 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4%;
+}
+
+form {
+  padding: 4%;
+  width: 73%;
+  height: 100%;
+  border: 4px solid white;
+  margin-top: 10%;
+  display: inline-block;
+  border-radius: 5px
+}
+
+li {
+  text-align: center;
+  text-size-adjust: 0.5em;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  border-bottom: 4px solid white;
   
 }
 
+body {
+  margin: 20px 20px 0px 20px;
+  background-color: rgb(85, 86, 88);
+  display: flex;
+  
+  
+}
+
+#alarm {
+  justify-content: space-evenly;
+}
+
+
 #container1{
+  text-align: center;
   display: inline-block;
+  width: 50vw;
+  height: 50vh;
+
+}
+
+#container2{
+  display: block;
+  width: 50vw;
+  height: 50vh;
 }
 
 #clockFace {
@@ -36,15 +80,14 @@ width: 700px;
 height: 700px;
 background: url("StarkSigilClock.png") no-repeat;
 background-size: contain;
-
+margin: auto;
 
 }
 
 #secondHand { 
   position: absolute;
     top: 23.5%;
-    left: 49.5%;
-    margin-left: -7px;
+    left: 48.5%;
     width: 25px;
     height: 285px;
     background: url('NeedleHouseStarkSteel.svg') 50% 50% no-repeat;
@@ -52,35 +95,32 @@ background-size: contain;
     transform-origin: 45% 185px;
     background-size: cover;
 } 
-#minuteHand {
+ #minuteHand {
   position: absolute;
-    top: 28.5%;
-    left: 48.5%;
-    margin-left: -8px;
+    top: 28%;
+    left: 47%;
+
     width: 58px;
     height: 229px;
     background: url('LongClawHouseStarkSteel.svg') 50% 50% no-repeat;
     z-index: 7;
-    transform-origin: 40% 150px;
+    transform-origin: 40% 152px;
     background-size: cover;
-} 
+}  
 
-#hourHand{
+ #hourHand{
   position: absolute;
-    top: 26%;
-    left: 44%;
-    margin-left: -7px;
+    top: 25.8%;
+    left: 43%;
     width: 100px;
     height: 300px;
     background: url('IceHouseStarkSteel.svg') 50% 50% no-repeat;
     z-index: 5;
     transform-origin: 52% 169px;
-    background-size: cover;
-}
+    background-size: cover; 
+} 
 
-
-
-input {
+#toDoInput {
   border: 4px solid white;
   border-radius: 5px;
   width: 300px;
@@ -91,7 +131,7 @@ input {
   font-weight: bold;
 }
 
-input:hover {
+#toDoInput:hover {
   border: 4px solid rgb(100, 100, 100);
   background-color: white;
   color: rgb(100, 100, 100);
@@ -100,6 +140,8 @@ input:hover {
 }
 
 button {
+  margin-top: 10px;
+  margin-left: 10px;
   border: 4px solid white;
 	padding: 5px 15px;
 	border-radius: 5px;
@@ -114,4 +156,33 @@ border: 2px solid rgb(100, 100, 100);
 background-color: white;
 color: rgb(100, 100, 100);
 font-weight: bold;
+}
+
+
+
+#alarmTime {
+  width: 50%;
+  border: 4px solid white;
+  border-radius: 5px;
+  background-color: rgb(165, 167, 170);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#alarmTime:hover {
+  border: 4px solid rgb(100, 100, 100);
+  background-color: white;
+  color: rgb(100, 100, 100);
+  transition: all 0.75s ease;
+  font-weight: bold;
+}
+
+.done {
+  text-decoration: line-through;
+  
+}
+
+.delete {
+  display: none;
 }
