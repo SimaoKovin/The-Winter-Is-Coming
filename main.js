@@ -73,5 +73,50 @@ function stopAlarm() {
 
 function snooze() {
   stopAlarm();
-  alarmTimer = setTimeout(startAlarm, 36000);
+  alarmTimer = setTimeout(startAlarm, 300000);
 };
+
+// To Do lista
+
+
+
+//dodavanje
+
+
+
+function toDoList() {
+  var task = document.getElementById('toDoInput').value;
+  if (toDoInput.value === '') {
+  alert('No such thing as empty tasks!');
+  }
+  else {
+  var text = document.createTextNode(task);
+  var newTask = document.createElement('li');
+  newTask.appendChild(text);
+  document.getElementById('toDolist').appendChild(newTask);
+  toDoInput.value=""; // kada se zadatak doda, input se prazni
+  }
+  //precrtavanje
+function crossOut() {
+    newTask.classList.toggle("done");
+  }
+  newTask.addEventListener("click",crossOut);
+
+  // individualno brisanje
+
+  function deleteItem() {
+    newTask.classList.toggle("delete");
+  }
+  newTask.addEventListener("dblclick",deleteItem);
+} 
+
+
+
+
+
+//brisanje
+
+function clearItems() {
+  document.getElementById('toDolist').innerHTML = "";
+  
+}
