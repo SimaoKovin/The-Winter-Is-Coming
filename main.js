@@ -29,7 +29,7 @@ setInterval(function () {
 
 
 var alarmSound = new Audio();
-alarmSound.src = 'https://raw.githubusercontent.com/SimaoKovin/The-Winter-Is-Coming/master/GOTAlarm.mp3';
+alarmSound.src = 'GOTalarm.mp3';
 var alarmTimer;
 
 function setAlarm(button) {
