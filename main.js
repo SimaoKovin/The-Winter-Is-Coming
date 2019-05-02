@@ -32,6 +32,7 @@ setInterval(function () {
 // Alarm
 
 $('#date-time').datetimepicker();
+
 var alarmSound = new Audio('GOTalarm.mp3');
 var alarmTimer;
 
@@ -57,6 +58,7 @@ function cancelAlarm(button) {
 
 function startAlarm() {
   alarmSound.play();
+  
   document.getElementById('alarmAddOptions').style.display = '';
 };
 
