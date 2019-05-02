@@ -128,9 +128,9 @@ margin: auto;
 
 #date-time {
   width: 50%;
-  height: 30%;
+  height: 35%;
+  font-size: 1vw;
 }
-
 Input {
   width: 70%;
   height: 10%;
@@ -173,7 +173,7 @@ font-weight: bold;
 }
 
 #alarmButton {
-  height: 40%;
+  height: 45%;
 }
 
 
