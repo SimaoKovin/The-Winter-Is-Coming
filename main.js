@@ -1,6 +1,7 @@
 
 
 
+
 let hourDiv = document.getElementById('hourHand');
 let minuteDiv = document.getElementById('minuteHand');
 let secondDiv = document.getElementById('secondHand');
