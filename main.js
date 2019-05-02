@@ -1,3 +1,6 @@
+
+
+
 let hourDiv = document.getElementById('hourHand');
 let minuteDiv = document.getElementById('minuteHand');
 let secondDiv = document.getElementById('secondHand');
@@ -27,28 +30,21 @@ setInterval(function () {
 
 // Alarm
 
-
+$('#date-time').datetimepicker();
 var alarmSound = new Audio();
 alarmSound.src = 'GOTalarm.mp3';
 var alarmTimer;
 
 function setAlarm(button) {
-  var ms = document.getElementById('alarmTime').valueAsNumber;
-  if (isNaN(ms)) {
-    alert('By the gods, that is no date!')
-    return;
-  }
-
+  var ms = document.getElementById('date-time').value;
   var alarm = new Date(ms);
-  var alarmTime = new Date(alarm.getUTCFullYear(), alarm.getUTCMonth(), alarm.getUTCDate(), alarm.getUTCHours(), alarm.getUTCMinutes(), alarm.getUTCSeconds());
-
-  var timeDifference = alarmTime.getTime() - (new Date()).getTime();
+  var timeDifference = alarm.getTime() - (new Date()).getTime();
 
   if (timeDifference < 0) {
-    alert('only Bran Stark may visit times passed');
+    alert('By The Old Gods, that Time Input is Invalid!');
     return;
   }
-  alarmTimer = setTimeout(startAlarm, timeDifference);
+  alarmTimer = setTimeout(startAlarm, timeDifference + 500);
   button.innerText = 'Cancel Alarm';
   button.setAttribute('onclick', 'cancelAlarm(this);');
 };
