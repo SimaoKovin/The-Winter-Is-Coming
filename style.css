@@ -162,7 +162,7 @@ button {
 	background-color: rgb(165, 167, 170);
 	transition: all 0.75s ease;
   font-weight: bold;
-  font-size: 0.5vw;
+  font-size: 0.7vw;
 }
 
 button:hover {
