@@ -32,8 +32,7 @@ setInterval(function () {
 // Alarm
 
 $('#date-time').datetimepicker();
-var alarmSound = new Audio();
-alarmSound.src = 'GOTalarm.mp3';
+var alarmSound = new Audio('GOTalarm.mp3');
 var alarmTimer;
 
 function setAlarm(button) {
