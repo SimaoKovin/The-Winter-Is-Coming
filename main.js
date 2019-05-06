@@ -20,7 +20,7 @@ setInterval(function () {
   clockOperate();
 }, 1000)
 // Alarm
-//JSON datetimepicker koji je neophodan da bi input proradio u Mozilla Firefox-u 
+//Jquery datetimepicker koji je neophodan da bi input proradio u Mozilla Firefox-u 
 $('#date-time').datetimepicker();
 //mp3 fajl alarma
 var alarmSound = new Audio('GOTalarm.mp3');
