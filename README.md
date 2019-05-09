@@ -10,7 +10,7 @@ Settable alarm clock with a snooze, stop and cancel options
 
 To-do list with options of adding tasks, crossing tasks over by clicking on them, removing individual items via doubleclick and clearing the entire list bia 'clear list' button.
 
-During the development of the application I've used Html, CSS, Javascript, and Adobe Illustrator.
+During the development of the application I've used Html, CSS, Javascript, Jquery and Adobe Illustrator.
 
 The application has one of each: HTML, CSS and Javascript files.
 
